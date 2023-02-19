@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* tailwind components start*/
+
+@layer components {
+    .btn {
+        @apply px-5 py-3 rounded-md bg-bg;
+    }
+    
+    .btn-hover {
+        @apply hover:text-pink hover:bg-white;
+    
+    }
+}
+
+/* tailwind components end*/

@@ -1,0 +1,23 @@
+{
+  "name": "clone-clickup-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taniasultana-dev/clone-clickup-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taniasultana-dev/clone-clickup-blog/issues"
+  },
+  "homepage": "https://github.com/taniasultana-dev/clone-clickup-blog#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

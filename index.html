@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./output/tailwind.css">
+</head>
+<body>
+    <header class="bg-white relative z-30">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-4 pt-5 pb-5 bg-white items-center justify-center sm:mx-5">
+            <div class="col-span-1 align-middle">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="214" height="39" fill="none"><path fill="url(#paint0_linear)" d="M0 28.46l5.606-4.338c2.978 3.927 6.142 5.736 9.664 5.736 3.504 0 6.579-1.788 9.422-5.683l5.686 4.233c-4.103 5.617-9.203 8.584-15.108 8.584-5.886 0-11.035-2.948-15.27-8.532z"></path><path fill="url(#paint1_linear)" d="M15.252 9.607l-9.978 8.685-4.612-5.403L15.273.17 29.77 12.898l-4.633 5.384-9.884-8.675z"></path><path fill="#111" fill-rule="evenodd" d="M70.827 8.884c0 1.879 1.356 3.248 3.216 3.248v.003c1.799 0 3.188-1.372 3.188-3.251 0-1.817-1.39-3.187-3.188-3.187-1.797 0-3.216 1.37-3.216 3.187zm-2.045-1.912v24.313H63.23V6.972h5.552zM51.875 31.635c-3.406 0-6.245-1.115-8.547-3.346-2.303-2.261-3.438-5.16-3.438-8.699 0-3.567 1.166-6.499 3.468-8.794 2.336-2.325 5.175-3.472 8.551-3.472 4.165 0 7.854 1.815 10.002 4.652l-3.758 3.983c-1.799-1.945-3.755-2.932-5.867-2.932-1.799 0-3.282.604-4.514 1.848-1.198 1.243-1.796 2.806-1.796 4.684 0 1.817.598 3.346 1.797 4.59 1.23 1.21 2.714 1.815 4.48 1.815 2.303 0 4.322-1.02 5.994-3.028l3.913 3.793c-1.073 1.434-2.524 2.614-4.322 3.537-1.799.925-3.786 1.37-5.963 1.37zm24.976-17.94v17.59h-5.585v-17.59h5.585zm4.004 15.39c1.732 1.723 3.94 2.583 6.686 2.583 3.692 0 6.814-1.816 8.33-4.749l-4.45-2.675c-.631 1.37-2.114 2.262-3.722 2.262-2.242 0-3.913-1.722-3.913-4.048a3.993 3.993 0 011.104-2.835c.758-.765 1.704-1.148 2.872-1.148 1.608 0 2.84.765 3.722 2.264l4.448-2.36c-1.481-3.345-4.669-5.129-8.297-5.129-2.776 0-5.015.859-6.75 2.58-1.735 1.722-2.587 3.92-2.587 6.628 0 2.709.852 4.908 2.557 6.628zm34.38 2.2h-6.628l-5.144-6.98-.82.766v6.214h-5.549V6.972h5.552v11.821l5.236-5.098h6.783l-7.475 7.074 8.045 10.516zm.371-23.55V22.14c0 6.946 4.796 9.56 9.623 9.56 4.857 0 9.622-2.614 9.622-9.56V7.736h-5.964v14.309c0 2.58-1.513 3.919-3.658 3.919-2.178 0-3.692-1.275-3.692-3.92V7.737h-5.931zm32.425 5.515c2.494 0 4.514.892 6.122 2.675 1.608 1.753 2.396 3.953 2.396 6.533 0 2.583-.819 4.78-2.427 6.597-1.61 1.783-3.628 2.678-6.058 2.678-1.926 0-3.597-.638-4.953-1.912v8.699h-5.585V13.695h5.491v1.626c1.356-1.372 3.027-2.07 5.014-2.07zm-1.071 5.225c2.272 0 3.911 1.753 3.911 4.048h.002a4.121 4.121 0 01-1.107 2.868c-.725.796-1.671 1.18-2.806 1.18-1.137 0-2.084-.384-2.839-1.18-.728-.797-1.105-1.753-1.105-2.868 0-2.295 1.672-4.048 3.944-4.048z" clip-rule="evenodd"></path><path fill="#B9BEC7" d="M173.494 18.355c-1.939 0-3.509.859-4.638 2.307V13.25H166.5v18.58h2.356v-1.915c1.104 1.399 2.675 2.233 4.614 2.233 3.779 0 6.577-3.068 6.577-6.896 0-3.83-2.798-6.897-6.553-6.897zm-.294 11.584c-2.749 0-4.443-2.11-4.443-4.712 0-2.528 1.694-4.663 4.443-4.663 2.724 0 4.467 2.11 4.467 4.663 0 2.602-1.743 4.712-4.467 4.712zM184.022 31.83V13.25h-2.356v18.58h2.356zM192.566 32.148c4.05 0 6.897-3.068 6.897-6.921 0-3.78-2.847-6.897-6.897-6.897-4.074 0-6.921 3.117-6.921 6.897 0 3.853 2.847 6.921 6.921 6.921zm0-2.16c-2.552 0-4.54-2.16-4.54-4.761 0-2.553 1.988-4.712 4.54-4.712 2.553 0 4.541 2.16 4.541 4.712 0 2.602-1.988 4.761-4.541 4.761zM211.453 18.674v1.718c-1.104-1.276-2.651-2.037-4.491-2.037-3.755 0-6.725 2.872-6.725 6.725 0 3.853 2.822 6.774 6.602 6.774 1.89 0 3.485-.737 4.614-2.062v1.08c0 2.552-1.792 4.418-4.737 4.418-1.767 0-3.534-.737-4.688-1.596l-1.104 1.866a10.081 10.081 0 005.817 1.865c4.246 0 7.044-2.65 7.044-6.946V18.674h-2.332zm-4.344 11.069c-2.602 0-4.492-1.988-4.492-4.639 0-2.65 1.89-4.614 4.492-4.614 2.577 0 4.491 1.964 4.491 4.614s-1.914 4.639-4.491 4.639z"></path><defs><linearGradient id="paint0_linear" x1="0" x2="30.378" y1="39.31" y2="39.31" gradientUnits="userSpaceOnUse"><stop stop-color="#8930FD"></stop><stop offset="1" stop-color="#49CCF9"></stop></linearGradient><linearGradient id="paint1_linear" x1=".662" x2="29.769" y1="21.555" y2="21.555" gradientUnits="userSpaceOnUse"><stop stop-color="#FF02F0"></stop><stop offset="1" stop-color="#FFC800"></stop></linearGradient></defs></svg>
+                </a>
+            </div>
+            <div class="col-span-2 align-middle text-right sm:invisible lg:visible">
+                <ul>
+                    <li class="inline-block mr-8 text-secondary font-semibold capitalize text-xs">
+                        <a href="#">teams</a>
+                    </li>
+                    <li class="inline-block mr-8 text-secondary font-semibold capitalize text-xs">
+                        <a href="#">product</a>
+                    </li>
+                    <li class="inline-block mr-8 text-secondary font-semibold capitalize text-xs">
+                        <a href="#">topics</a>
+                    </li>
+                    <li class="inline-block mr-8 text-secondary font-semibold capitalize text-xs">
+                        <a href="#">news</a>
+                    </li>
+                    <li class="inline-block">
+                        <div class="inline-block text-secondary text-xs">
+                            <form action="#" class="inline-block  border border-gray px-2 py-2 rounded-md">
+                                <i class="fa-solid fa-magnifying-glass mr-2"></i>
+                                 <input type="text" placeholder="search">
+                            </form>
+                        </div>
+                </ul>
+            </div>
+            <div class="col-span-1 align-middle text-right sm:invisible lg:visible">
+                <a href="#" class="text-xs mr-3"> clickup.com </a>
+                <button class="border-0 bg-pink text-xs text-white px-4 py-3 drop-shadow-lg shadow-pink rounded capitalize">sign up</button>
+            </div>
+        </div>
+        </div>
+    </header><!--header end-->
+    <section class="relative before:block before:absolute before:inline-block before:bg-blue before:top-0 before:w-96 before:h-96 left-0 before:blur-xl before:z-[-1] after:block after:absolute after:bg-pink after:right-0 after:content-[''] after:w-96 after:h-96 after:z-[-1] after:top-0 after:blur-xl pt-24 pb-24 overflow-hidden">
+        <div class="container mx-auto text-center z-10 text-red-600 relative">
+            <ul>
+                <li class="inline-block">
+                    <a href="#" class="text-secondary text-[13px] relative after:content-['/'] after:absolute after:block after:right-[-10px] after:top-0 after:h-[80%] mr-5 capitalize">home</a>
+                </li>
+                <li class="inline-block">
+                    <a href="#" class="text-secondary text-[13px] relative after:content-['/'] after:absolute after:block after:right-[-10px] after:top-0 after:h-[80%] mr-5 capitalize">worklife</a>
+                </li>
+                <li class="inline-block">
+                    <a href="#" class="text-secondary text-[13px]">Productivity</a>
+                </li>
+            </ul>
+            <h1 class="mt-8 text-[70px] text-primary font-bold font-poppins">Productivity</h1>
+            <p class="text-secondary text-base max-w-[1136px] mx-auto">ClickUp's core mission is to make the world more productive and help save people time. Learn from our blend of personal and work productivity tips, tools, and strategies.</p>
+            <div class="mt-8">
+                <a href="#" class="btn text-secondary font-semibold text-[13px] mr-3 btn-hover shadow-sm">Productivity</a>
+                <a href="#" class="btn text-secondary font-semibold text-[13px] btn-hover shadow-sm"> Remote Work </a>
+            </div>
+        </div>
+    </section><!--productivity section end-->
+    <section class="bg-gray4 pb-24">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-3 text-center gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:ml-5 sm:mr-5 md:ml-6 md:mr-6 lg:ml-8 lg:mr-8 xl:ml-12 xl:mr-12">
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/productivity-hacks-3.webp" alt="productivity-hacks-3">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-green text-left ml-10 mt-4 uppercase"> Productivity </a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h1 class="text-lg text-primary font-bold">
+                        <a href="#"> 22 Productivity Hacks to Get Work Done </a>
+                    </h1>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                      <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Leila-Cruz-webp.webp" alt="Leila-Cruz-webp">
+                      <p class="text-xs font-bold text-primary">Leila Cruz</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 12min read</span>
+                    </div>
+                </div>
+            </div><!--item 1 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/card-Image.webp" alt="card-Image">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-sky text-left ml-10 mt-4 uppercase">Software</a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h1 class="text-lg text-primary font-bold">
+                        <a href="#">  10 Best Project Management Software for Architects  </a>
+                    </h1>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                      <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                      <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 10min read</span>
+                    </div>
+                </div>
+            </div><!--item 2 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/To-Do-List.webp" alt="To-Do-List">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-gray2 text-left ml-10 mt-4 uppercase">  Time Management  </a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#">  10 Free To-Do List Templates by ClickUp   </a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 10min read</span>
+                    </div>
+                </div>
+            </div><!--item 3 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/Airtable-vs-Coda.webp" alt="Airtable-vs-Coda">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-pink text-left ml-10 mt-4 uppercase">Software</a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#">  Coda Vs. Airtable Comparison: Which Tool is Better? 2023   </a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 10min read</span>
+                    </div>
+                </div>
+            </div><!--item 4 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/Accounting-Project.webp" alt="Accounting-Project">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-blue1 text-left ml-10 mt-4 uppercase">Software</a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#">  Best Accounting Project Management Software 2023   </a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-8 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 13min read</span>
+                    </div>
+                </div>
+            </div><!--item 5 end-->
+            <div class="item-card bg-purple shadow-lg">
+                <div class="text-purple bg-white w-12 h-12 flex items-center justify-center text-[30px] rounded-2xl ml-6 mt-6">
+                    <i class="fa-solid fa-square-envelope"></i>
+                </div>
+                <h2 class="text-[32px] text-white font-poppins font-bold text-left ml-6 mt-5">Subscribe to our blog</h2>
+                <p class="text-[13px] text-white ml-6 text-left mt-5 mb-20">Get the latest posts to your email</p>
+                <h2 class="block text-white pt-3 pb-2 text-left  ml-6 mt-10 px-2 border border-white w-[270px] mb-4 rounded">Enter Email</h2>
+                <button class="border border-white px-[100px] pt-3 pb-2 rounded bg-white text-purple font-bold">
+                <a href="#"> Subscribe</a>
+                </button>
+            </div><!--item 6 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/Accounting-Project.webp" alt="Accounting-Project">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-blue1 text-left ml-10 mt-4 uppercase">Software</a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#"> 10 Best Free Word Processing Software 2023 </a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 12min read</span>
+                    </div>
+                </div>
+            </div><!--item 7 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/Team-Collaboration.webp" alt="Team-Collaboration">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-green text-left ml-10 mt-4 uppercase">Software</a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#">Best 15 Team Collaboration Software 2023</a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 15min read</span>
+                    </div>
+                </div>
+            </div><!--item 7 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/meeting-cadence-1.webp" alt="meeting-cadence-1">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-yellow text-left ml-10 mt-4 uppercase"> Remote Work </a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#">How to Choose the Right Meeting Cadence for Remote Teams</a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 12min read</span>
+                    </div>
+                </div>
+            </div><!--item 8 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/Pivotal-Tracker.webp" alt="Pivotal-Tracker">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-green text-left ml-10 mt-4 uppercase">Software</a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#"> Top 10 Pivotal Tracker Alternatives and Competitors 2023 </a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 11min read</span>
+                    </div>
+                </div>
+            </div><!--item 9 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/Timecamp-Alternati 15.webp" alt="Timecamp-Alternati">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-yellow text-left ml-10 mt-4 uppercase"> Software </a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#"> 15 Best TimeCamp Alternatives and Competitors 2023 </a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 15min read</span>
+                    </div>
+                </div>
+            </div><!--item 10 end-->
+            <div class="item-card bg-white shadow-lg">
+                <img width="359" height="269" class="w-full object-cover" src="./images/Hubstaff-Alternatives.webp" alt="Hubstaff-Alternatives">
+                <div class="card-header text-left mt-4">
+                    <a href="#" class="text-xs font-bold text-yellow text-left ml-10 mt-4 uppercase"> Software </a>
+                </div>
+                <div class="card-title text-left ml-[38px] mr-[38px]">
+                    <h3 class="text-lg text-primary font-bold">
+                        <a href="#">  10 Best Hubstaff Alternatives and Competitors 2023  </a>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-between ml-[38px] mr-[38px] mt-4 mb-5">
+                    <div class="flex items-center">
+                        <img width="34" height="34" class="object-cover rounded-full mr-2" src="./images/Alex-York-Bio.webp" alt="Alex-York-Bio">
+                        <p class="text-xs font-bold text-primary">Alex York</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img width="20px" height="20px" src="./images/Screenshot_10.webp" alt="">
+                        <span class="text-xs text-secondary">Max 11min read</span>
+                    </div>
+                </div>
+            </div><!--item 10 end-->
+        </div>
+        <div class="text-center py-10">
+            <button class="py-3 px-5 bg-gray4 border border-gray3 rounded-lg shadow-2xl mr-[5px]">
+                <a href="#" class="text-primary"><i class="fa-solid fa-chevron-left"></i></a>
+            </button>
+            <button class="py-3 px-5 bg-white border border-gray3 rounded-lg shadow-2xl mr-[5px]">
+                <a href="#" class="text-primary">1</a>
+            </button>
+            <button class="py-3 px-5 bg-gray4 border border-gray3 rounded-lg shadow-2xl mr-[5px]">
+                <a href="#" class="text-primary">2</a>
+            </button>
+            <button class="py-3 px-5 bg-gray4 border border-gray3 rounded-lg shadow-2xl mr-[5px]">
+                <a href="#" class="text-primary">3</a>
+            </button>
+            <button class="py-3 px-5 bg-gray4 border border-gray3 rounded-lg shadow-2xl mr-[5px]">
+                <a href="#" class="text-primary">...</a>
+            </button>
+            <button class="py-3 px-5 bg-gray4 border border-gray3 rounded-lg shadow-2xl mr-[5px]">
+                <a href="#" class="text-primary">11</a>
+            </button>
+            <button class="py-3 px-5 bg-gray4 border border-gray3 rounded-lg shadow-2xl">
+                <a href="#" class="text-primary"><i class="fa-sharp fa-solid fa-chevron-right"></i></a>
+            </button>
+        </div>
+        </div>
+    </div>
+</section><!--item section end-->
+<section>
+    <div class="border-y-2 border-gray bg-gray4">
+        <div class="container mx-auto">
+         <div class="sm:w-[590px] sm:h-[250px] md:w-[700px] md:h-[250px] lg:w-[970px] lg:h-[160px] xl:w-[1200px] xl:h-[160px] bg-no-repeat bg-center mx-auto bg-gray4 rounded-lg z[-1px] mt-[-85px]" style="background:url(./images/bg-pattern.27f96f9d\ .webp); opacity: .7; z-index:-1;">
+              <div class="grid sm:grid-cols-1 lg:grid-cols-2 py-10 sm:text-center lg:text-left">
+                 <div class="ml-5 sm:text-[32px] md:text-[34px] font-bold mb-5">
+                     <h2>Receive the latest WriteClick Newsletter updates.</h2>
+                 </div>
+                 <div class="flex mt-5">
+                     <div class="sm:ml-8 md:ml-10 lg:ml-5">
+                         <form action="#" class="inline-block border-none border-gray1 bg-white sm:px-20 sm:py-3 md:px-28 md:py-3 lg:px-10 lg:py-3 mr-3 rounded-md shadow-2xl text-left">
+                             <i class="fa-sharp fa-solid fa-envelope-open text-pink"></i>
+                              <input type="text" placeholder="Enter your email address">
+                         </form>
+                     </div>
+                     <div>
+                         <button class="border-0 bg-pink text-xs text-white px-6 py-4 drop-shadow-lg shadow-pink rounded capitalize">Subscribe</button>
+                     </div>
+                 </div>
+              </div>
+            </div>
+            <div class="sm:ml-5 sm:mr-5 md:ml-6 md:mr-6 lg:ml-8 lg:mr-8 xl:ml-12 xl:mr-12 py-5">
+              <div class="grid sm:grid-cols-1 lg:grid-cols-3 text-center">
+                 <div class="flex items-center mt-5">
+                     <svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6698 4.45903C7.72562 7.12411 1.79408 17.3864 4.45911 27.3345C7.12415 37.2826 17.3911 43.2036 27.3353 40.5385C37.2795 37.8734 43.2111 27.6111 40.546 17.6631C37.881 7.715 27.614 1.79395 17.6698 4.45903ZM28.3242 44.2295C16.3321 47.4434 3.97968 40.3072 0.769378 28.3238C-2.44092 16.3403 4.68918 3.98271 16.6813 0.768786C28.6549 -2.44019 41.0257 4.6911 44.236 16.6745C47.4463 28.658 40.2978 41.0205 28.3242 44.2295Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6359 15.531C16.7984 16.5595 14.4995 20.526 15.5287 24.368C16.5584 28.2117 20.5317 30.4953 24.3692 29.4668C28.2067 28.4384 30.5061 24.4737 29.4764 20.6299C28.4472 16.788 24.4733 14.5026 20.6359 15.531ZM25.3579 33.1575C19.4726 34.7348 13.4133 31.2342 11.8388 25.3569C10.2643 19.4796 13.7618 13.4178 19.6472 11.8405C25.5141 10.2681 31.5918 13.7638 33.1663 19.6411C34.7408 25.5184 31.2248 31.5852 25.3579 33.1575Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7072 15.924C16.1906 16.0624 15.674 15.7578 15.5375 15.2485L12.7776 4.94618C12.6406 4.43502 12.9363 3.91474 13.4529 3.7763C13.951 3.64279 14.4856 3.94057 14.6225 4.45173L17.3825 14.7541C17.5189 15.2634 17.2053 15.7905 16.7072 15.924Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2345 13.9061C23.7179 14.0445 23.2013 13.7399 23.0649 13.2306L20.3049 2.92826C20.168 2.41711 20.4636 1.89683 20.9802 1.75838C21.4968 1.61994 22.0129 1.92266 22.1498 2.43381L24.9098 12.7362C25.0462 13.2455 24.7511 13.7676 24.2345 13.9061Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0398 43.2951C23.5232 43.4335 23.0066 43.129 22.8701 42.6197L20.1102 32.3173C19.9732 31.8061 20.2689 31.2859 20.7855 31.1474C21.2836 31.0139 21.8182 31.3117 21.9551 31.8228L24.7151 42.1252C24.8515 42.6345 24.5379 43.1616 24.0398 43.2951Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5673 41.2772C31.0508 41.4156 30.5341 41.111 30.3977 40.6017L27.6378 30.2994C27.5008 29.7882 27.7965 29.2679 28.313 29.1295C28.8296 28.9911 29.3458 29.2938 29.4827 29.8049L32.2426 40.1073C32.3791 40.6166 32.0839 41.1387 31.5673 41.2772Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5855 14.6345L30.2723 17.3985C29.7742 17.532 29.2391 17.2324 29.1027 16.7231C28.9657 16.2119 29.2798 15.6867 29.778 15.5532L40.0912 12.7892C40.5893 12.6557 41.1239 12.9535 41.2608 13.4646C41.3972 13.9739 41.0836 14.501 40.5855 14.6345Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M42.6035 22.1672L32.2903 24.9312C31.7922 25.0647 31.2571 24.7651 31.1207 24.2558C30.9837 23.7446 31.2978 23.2194 31.796 23.0859L42.1091 20.3219C42.6073 20.1884 43.1418 20.4862 43.2788 20.9974C43.4152 21.5067 43.1016 22.0337 42.6035 22.1672Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2063 21.9721L2.9116 24.7311C2.39502 24.8696 1.8784 24.565 1.74196 24.0557C1.60502 23.5445 1.90067 23.0243 2.41725 22.8858L12.712 20.1268C13.2286 19.9883 13.7447 20.2911 13.8816 20.8022C14.0181 21.3115 13.7229 21.8336 13.2063 21.9721Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2243 29.5053L4.92958 32.2643C4.413 32.4028 3.89638 32.0982 3.75994 31.5889C3.62301 31.0778 3.91865 30.5575 4.43524 30.419L14.73 27.66C15.2466 27.5216 15.7627 27.8243 15.8996 28.3354C16.0361 28.8447 15.7409 29.3669 15.2243 29.5053Z" fill="#7C828D"></path> </svg>
+                     <span class="ml-2">
+                         <a class="font-bold" href="#">Free training</a> & 
+                         <a href="#">24-hour support</a>
+                     </span>
+                 </div>
+                 <div class="flex items-center mt-5">
+                     <svg width="40" height="45" viewBox="0 0 40 45" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6777 3.50769C14.8903 3.50769 10.1732 4.26982 5.63209 5.77471C4.47042 6.14081 3.51996 7.42217 3.51996 8.58384V25.9561C3.51996 27.461 4.45282 30.1117 5.66729 31.3948C12.0389 37.9319 16.1575 41.4802 19.6777 41.4802C23.1804 41.4802 27.299 37.9301 33.6882 31.3772C34.9027 30.1117 35.8179 27.461 35.8355 25.942V8.58736C35.8355 7.46441 34.8323 6.12673 33.741 5.78175C29.1823 4.26982 24.4476 3.50769 19.6777 3.50769ZM19.6781 45C14.8906 45 10.3495 41.2422 3.13311 33.8374C1.17939 31.7869 0.00011694 28.2297 0.00011694 25.9644V8.5869C-0.0174841 5.89394 1.95384 3.24322 4.54119 2.42477C14.2922 -0.803268 25.0288 -0.815589 34.8326 2.43181C37.3496 3.22914 39.3561 5.93794 39.3561 8.5869V25.9504C39.3385 28.2315 38.1592 31.7939 36.2231 33.8216C28.9891 41.2404 24.4656 45 19.6781 45Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.92029 9.6663V25.9226C7.92029 26.4489 8.50112 27.9802 8.81794 28.3182C11.3701 30.9372 17.3545 37.08 19.6778 37.08C21.9835 37.08 27.9327 30.9724 30.4849 28.3657C30.8545 27.9732 31.4177 26.4278 31.4353 25.9367V9.66102C23.8141 7.33768 15.612 7.32536 7.92029 9.6663ZM19.678 38.8397C16.8443 38.8397 12.1448 34.2475 7.55089 29.541C6.86444 28.8229 6.178 26.8428 6.1604 25.9346V9.01816C6.1604 8.63622 6.40682 8.29652 6.75884 8.18035C15.1898 5.47331 24.2543 5.48739 32.5796 8.17683C32.9492 8.29476 33.1957 8.6327 33.1957 9.01464V25.9504C33.178 26.8621 32.4564 28.8423 31.77 29.5604C27.1761 34.2722 22.4942 38.8397 19.678 38.8397Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9358 26.8612C17.443 26.8612 16.9853 26.6641 16.6509 26.3138L13.7643 23.2829C13.0955 22.5789 13.1307 21.4647 13.8347 20.7941C14.5388 20.1253 15.6476 20.1499 16.3165 20.8557L17.8302 22.4451L22.9521 16.2108C23.5681 15.4627 24.677 15.3483 25.4162 15.9661C26.1731 16.5839 26.2787 17.6928 25.6627 18.4444L19.2911 26.217C18.9742 26.606 18.499 26.8418 17.9886 26.8594L17.9358 26.8612Z" fill="#7C828D"></path> </svg>
+                     <span class="ml-2">
+                         Serious about 
+                         <a class="font-bold" href="#">security & privacy</a>
+                     </span>
+                 </div>
+                 <div class="flex items-center mt-5">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4976 3.82172C17.5087 3.82172 12.8066 5.76486 9.28957 9.29195C5.75342 12.819 3.82288 17.5097 3.82288 22.5004C3.82288 27.493 5.75342 32.1836 9.28957 35.7126C12.8066 39.2378 17.5087 41.1791 22.4976 41.1791C27.4864 41.1791 32.1885 39.2359 35.7056 35.7088C43.0072 28.4254 43.0072 16.5754 35.7056 9.29195C32.1885 5.76486 27.4864 3.82172 22.4976 3.82172ZM22.4977 45C16.4767 45 10.8379 42.6613 6.57544 38.4139C2.33206 34.1627 -0.0189987 28.511 0.000115642 22.5C0.000115642 16.4871 2.33206 10.8373 6.57544 6.58989C10.8379 2.34057 16.4958 0 22.4977 0C28.5187 0 34.1574 2.34057 38.4199 6.58989C47.1934 15.3618 47.1934 29.6382 38.4199 38.4101C34.1574 42.6594 28.5187 45 22.4977 45Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9847 33.9622C11.7363 33.9622 11.5069 33.8686 11.3157 33.6813C5.14182 27.5175 5.14182 17.4846 11.3157 11.317C17.4897 5.15508 27.5247 5.15508 33.6795 11.317C39.8534 17.4827 39.8534 27.5137 33.6795 33.6775C33.3163 34.052 32.7047 34.052 32.3415 33.6775C31.9592 33.3049 31.9592 32.7012 32.3415 32.3267C37.7508 26.908 37.7508 18.0884 32.3415 12.6678C26.913 7.24917 18.0822 7.24917 12.6729 12.6678C7.2444 18.0903 7.2444 26.9099 12.6729 32.3305C13.036 32.705 13.036 33.3087 12.6729 33.6813C12.4817 33.8686 12.2332 33.9622 11.9847 33.9622Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4976 31.8017C20.4333 31.8017 18.7512 33.4774 18.7512 35.5447C18.7512 37.6101 20.4333 39.2839 22.4976 39.2839C24.562 39.2839 26.244 37.6101 26.244 35.5447C26.244 33.4774 24.562 31.8017 22.4976 31.8017Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9018 36.8187C23.6473 36.8187 24.3354 36.3983 24.6604 35.6895L31.8282 19.6877C32.2488 18.7247 31.8282 17.5936 30.8534 17.1618C29.8977 16.7261 28.7699 17.1656 28.3303 18.1247L21.1624 34.1266C20.7419 35.0895 21.1624 36.2206 22.1373 36.6525C22.3858 36.7652 22.6534 36.8187 22.9018 36.8187Z" fill="#7C828D"></path> </svg>
+                     <span class="ml-2">
+                         <a class="font-bold" href="#">99.99% uptime</a> & 
+                         the last 12 months
+                     </span>
+                 </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</section><!--newsletter section end-->
+<section>
+    <div class="border-b-2 border-gray  bg-gray4 py-8">
+        <div class="container mx-auto">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 ml-5">
+                <div>
+                    <ul>
+                        <li class="mb-5">
+                            <a class="font-semibold text-primary" href="#"> ClickUp </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> Product </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> Pricing </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> templates </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> downdold </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> careers </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> about us </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> integrations </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> import </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> product roadmap </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> affiliate & referrals </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> help docs </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> rivews </a>
+                        </li>
+                    </ul>
+                </div><!--item 1 end-->
+                <div>
+                    <ul>
+                        <li class="mb-5">
+                            <a class="font-semibold text-primary" href="#">  Blog Library  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Agencies  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Agile  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  CRM  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Gantt  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Goal Setting  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Kanban  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Marketing  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#"> Note-Taking  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Product Management  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Productivity  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Project Management  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Software  </a>
+                        </li>
+                    </ul>
+                </div><!--item 2 end-->
+                <div>
+                    <ul>
+                        <li class="mb-5">
+                            <a class="font-semibold text-primary" href="#">  WORK GUIDES  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Product Roadmap Guide   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  How to Write OKRs   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Guide to Resource Allocation  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Project Dependencies Guide  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Sprint Planning Guide   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Kanban Board Examples   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Productivity Hacks   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">  Project Software Guide  </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Workload Management Guide   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Goals for Work   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Virtual Meeting Etiquette   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Team Building Activities   </a>
+                        </li>
+                    </ul>
+                </div><!--item 3 end-->
+                <div>
+                    <ul>
+                        <li class="mb-5">
+                            <a class="font-semibold text-primary" href="#">Templates</a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Content Calendar Templates    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Project Manager Templates    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   Gantt Chart Templates   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   CRM Templates   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    To-Do List Templates   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Event Planning Templates    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Meeting Agenda Templates    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">   SOP Templates   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Roadmap Templates    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Product Manager Templates   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Performance Review Templates   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    SWOT Analysis Templates    </a>
+                        </li>
+                    </ul>
+                </div><!--item 4 end-->
+                <div>
+                    <ul>
+                        <li class="mb-5">
+                            <a class="font-semibold text-primary" href="#"> ClickUp Best Practices </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Guide to ClickUp Automations     </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Ultimate List of ClickUp Terms     </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    ClickUp Dashboard Examples    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Time Blocking in ClickUp   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">     Guide to ClickUp Whiteboards   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">      ClickUp University      </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">     CRM in ClickUp     </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Tips for Users with ADHD    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">     What Makes ClickUp Unique s    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">     ClickUp for Non Profits    </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    Performance Review Templates   </a>
+                        </li>
+                        <li class="mb-5">
+                            <a class="text-primary text-sm hover:text-blue capitalize" href="#">    SWOT Analysis Templates    </a>
+                        </li>
+                    </ul>
+                </div><!--item 5 end-->
+            </div>
+        </div>
+    </div>
+</section><!---footer section end-->
+<section class="bg-gray4 py-10">
+ <div class="container mx-auto">
+    <div class="grid grid-cols-2 mx-5 items-center">
+        <div>
+            <svg width="146" height="38" viewBox="0 0 146 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.61511 27.2592L10.6296 23.4086C13.2937 26.894 16.1242 28.5006 19.2749 28.5006C22.4086 28.5006 25.1591 26.913 27.7032 23.455L32.7893 27.2128C29.1185 32.1993 24.5568 34.8339 19.2749 34.8339C14.0098 34.8339 9.40387 32.2161 5.61511 27.2592Z" fill="url(#footer0_linear)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9923 10.5228L10.0669 18.2325L5.94116 13.4361L19.0112 2.14587L31.9781 13.4445L27.8334 18.2241L18.9923 10.5228Z" fill="url(#footer1_linear)"></path> <path d="M51.7539 30.0767C48.7065 30.0767 46.1666 29.0866 44.1069 27.1063C42.0472 25.0987 41.0321 22.5252 41.0321 19.3839C41.0321 16.2172 42.0746 13.6142 44.1343 11.577C46.2235 9.51234 48.7634 8.49478 51.7834 8.49478C55.509 8.49478 58.8092 10.1056 60.7299 12.6241L57.3707 16.1602C55.7617 14.4333 54.0116 13.5572 52.1225 13.5572C50.5135 13.5572 49.1867 14.0934 48.0852 15.1976C47.0132 16.3017 46.4783 17.6887 46.4783 19.3564C46.4783 20.9693 47.0132 22.3268 48.0852 23.4309C49.1867 24.5054 50.5135 25.0417 52.093 25.0417C54.1527 25.0417 55.9597 24.136 57.455 22.3542L60.9552 25.7214C59.9949 26.9944 58.6975 28.0416 57.0885 28.8607C55.4795 29.6819 53.702 30.0767 51.7539 30.0767ZM66.8753 8.18234V29.7663H61.9092V8.18234H66.8753ZM71.5823 12.7634C69.9185 12.7634 68.7054 11.5474 68.7054 9.87967C68.7054 8.26678 69.9754 7.05078 71.5823 7.05078C73.1913 7.05078 74.4338 8.26678 74.4338 9.87967C74.4338 11.5474 73.1913 12.7656 71.5823 12.7656V12.7634ZM74.0948 14.1504V29.7663H69.0993V14.1504H74.0948ZM83.6562 30.1062C81.2005 30.1062 79.2251 29.342 77.675 27.8136C76.1503 26.2872 75.3879 24.3344 75.3879 21.9299C75.3879 19.5253 76.1503 17.5747 77.7024 16.0462C79.2546 14.5178 81.2574 13.7557 83.7404 13.7557C86.9858 13.7557 89.8374 15.339 91.1621 18.3093L87.1838 20.4036C86.394 19.0736 85.2926 18.3938 83.8541 18.3938C82.8095 18.3938 81.9629 18.7337 81.2848 19.4134C80.963 19.7471 80.7101 20.1411 80.5406 20.573C80.3712 21.0048 80.2884 21.4659 80.297 21.9299C80.297 23.9946 81.7923 25.523 83.7973 25.523C85.2357 25.523 86.5625 24.7313 87.1269 23.5153L91.1073 25.8903C89.751 28.4933 86.9584 30.1062 83.6562 30.1062ZM108.429 29.7663H102.501L97.8993 23.5702L97.1664 24.25V29.7663H92.2025V8.18234H97.1685V18.6767L101.852 14.1504H107.92L101.233 20.431L108.429 29.7663ZM108.762 21.647V8.86H114.067V21.5626C114.067 23.9101 115.422 25.0417 117.37 25.0417C119.288 25.0417 120.642 23.8531 120.642 21.5626V8.86H125.977V21.647C125.977 27.8136 121.714 30.1337 117.37 30.1337C113.052 30.1337 108.762 27.8136 108.762 21.647ZM137.767 13.7557C139.997 13.7557 141.804 14.5473 143.242 16.1307C144.681 17.6866 145.386 19.6393 145.386 21.9299C145.386 24.2226 144.653 26.1732 143.215 27.7861C141.774 29.3694 139.969 30.1632 137.796 30.1632C136.073 30.1632 134.578 29.5974 133.365 28.4659V36.1883H128.369V14.1504H133.281V15.5944C134.494 14.3763 135.989 13.7557 137.767 13.7557ZM140.306 21.9869C140.306 19.9497 138.841 18.3938 136.808 18.3938C134.776 18.3938 133.281 19.9497 133.281 21.9869C133.281 22.977 133.618 23.8257 134.268 24.5329C134.944 25.2401 135.791 25.58 136.808 25.58C137.823 25.58 138.67 25.2401 139.319 24.5329C139.966 23.8452 140.321 22.9322 140.309 21.9869H140.306Z" fill="#292D34"></path> <defs> <linearGradient id="footer0_linear" x1="5.61511" y1="31.179" x2="32.7893" y2="31.179" gradientUnits="userSpaceOnUse"> <stop stop-color="#8930FD"></stop> <stop offset="1" stop-color="#49CCF9"></stop> </linearGradient> <linearGradient id="footer1_linear" x1="5.94116" y1="13.0864" x2="31.9781" y2="13.0864" gradientUnits="userSpaceOnUse"> <stop stop-color="#FF02F0"></stop> <stop offset="1" stop-color="#FFC800"></stop> </linearGradient> </defs> </svg>
+            <p class="text-sm text-primary mt-1">
+                © 2023 ClickUp | 
+                <a href="#">Security</a>|
+                <a href="#">Your Privacy</a>|
+                <a href="#">Terms</a> 
+            </p>
+        </div>
+        <div class="text-right">
+           <a href="#" class="inline-block mr-2">
+            <svg class="footer__social--active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g mask="url(#mask0_2445_1743)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4775 20.771C21.4775 21.0918 21.2174 21.3519 20.8966 21.3519H18.0107C17.6899 21.3519 17.4298 21.0918 17.4298 20.771V15.4831C17.4298 14.6942 17.6612 12.0263 15.3683 12.0263C13.5897 12.0263 13.2289 13.8524 13.1565 14.6719V20.771C13.1565 21.0918 12.8965 21.3519 12.5756 21.3519H9.78445C9.46365 21.3519 9.20355 21.0918 9.20355 20.771V9.39566C9.20355 9.07487 9.46365 8.81477 9.78445 8.81477H12.5756C12.8964 8.81477 13.1565 9.07487 13.1565 9.39566V10.3792C13.816 9.3895 14.7961 8.6256 16.8829 8.6256C21.504 8.6256 21.4775 12.9428 21.4775 15.3148V20.771ZM5.44637 7.75178C4.03533 7.75178 2.89144 6.6079 2.89144 5.19689C2.89144 3.78588 4.03533 2.642 5.44637 2.642C6.85741 2.642 8.0013 3.78588 8.0013 5.19689C8.0013 6.6079 6.85747 7.75178 5.44637 7.75178ZM7.42272 20.72C7.42272 21.069 7.13987 21.3518 6.79093 21.3518H4.10155C3.75261 21.3518 3.46976 21.069 3.46976 20.72V9.44644C3.46976 9.0975 3.75261 8.81466 4.10155 8.81466H6.79093C7.13987 8.81466 7.42272 9.0975 7.42272 9.44644V20.72ZM21.8249 -0.00311279H2.16684C0.96785 -0.00311279 -0.00415039 0.96887 -0.00415039 2.16784V21.8254C-0.00415039 23.0245 0.96785 23.9965 2.16684 23.9965H21.8248C23.0238 23.9965 23.9958 23.0245 23.9958 21.8254V2.16784C23.9958 0.96887 23.0238 -0.00311279 21.8249 -0.00311279Z" fill="#7C828D"></path> </g> </svg>
+           </a>
+           <a href="#" class="inline-block mr-2">
+            <svg class="footer__social--active" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g mask="url(#mask0_2445_1750)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7651 0H4.23086C2.44452 0 0.996338 1.44812 0.996338 3.23452V20.7689C0.996338 22.5553 2.44446 24.0034 4.23086 24.0034H12.8787L12.8934 15.4259H10.665C10.3754 15.4259 10.1403 15.1917 10.1392 14.9021L10.1285 12.1372C10.1274 11.846 10.3632 11.6094 10.6543 11.6094H12.8787V8.93782C12.8787 5.83747 14.7722 4.1493 17.5379 4.1493H19.8074C20.0978 4.1493 20.3332 4.38471 20.3332 4.67513V7.0065C20.3332 7.2968 20.098 7.53215 19.8077 7.53232L18.415 7.53297C16.9109 7.53297 16.6196 8.24769 16.6196 9.29659V11.6095H19.9246C20.2395 11.6095 20.4839 11.8844 20.4467 12.1972L20.119 14.9621C20.0877 15.2267 19.8633 15.426 19.5969 15.426H16.6344L16.6196 24.0035H21.7652C23.5516 24.0035 24.9997 22.5554 24.9997 20.7691V3.23452C24.9996 1.44812 23.5515 0 21.7651 0Z" fill="#7C828D"></path> </g> </svg>
+           </a>
+           <a href="#" class="inline-block mr-2">
+            <svg class="footer__social--active" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g mask="url(#mask0_2445_1753)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5871 16.8105C21.5871 19.426 19.4668 21.5464 16.8513 21.5464H7.14969C4.53418 21.5464 2.41385 19.426 2.41385 16.8105V7.10892C2.41385 4.49336 4.53418 2.37307 7.14969 2.37307H16.8513C19.4668 2.37307 21.5871 4.49336 21.5871 7.10892V16.8105ZM16.8516 -0.0413818H7.15002C3.20721 -0.0413818 -0.000488281 3.16632 -0.000488281 7.10913V16.8107C-0.000488281 20.7535 3.20721 23.9612 7.15002 23.9612H16.8516C20.7944 23.9612 24.0021 20.7535 24.0021 16.8107V7.10913C24.0021 3.16632 20.7944 -0.0413818 16.8516 -0.0413818Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0007 15.7951C9.90569 15.7951 8.2074 14.0968 8.2074 12.0019C8.2074 9.90688 9.90573 8.20859 12.0007 8.20859C14.0957 8.20859 15.7939 9.90688 15.7939 12.0019C15.7939 14.0968 14.0956 15.7951 12.0007 15.7951ZM12.0007 5.79297C8.5776 5.79297 5.79272 8.57784 5.79272 12.0009C5.79272 15.4239 8.5776 18.2088 12.0007 18.2088C15.4237 18.2088 18.2086 15.4239 18.2086 12.0009C18.2086 8.5778 15.4237 5.79297 12.0007 5.79297Z" fill="#7C828D"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2209 4.35315C19.0425 4.35315 19.7085 5.01913 19.7085 5.8407C19.7085 6.66227 19.0425 7.32824 18.2209 7.32824C17.3994 7.32824 16.7334 6.66227 16.7334 5.8407C16.7334 5.01913 17.3994 4.35315 18.2209 4.35315Z" fill="#7C828D"></path> </g> </svg>
+           </a>
+           <a href="#" class="inline-block">
+            <svg class="footer__social--active" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g mask="url(#mask0_2445_1763)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M23.6222 4.72705C23.0889 4.96398 22.5353 5.1509 21.9672 5.28622C22.5932 4.69029 23.0638 3.94491 23.3293 3.11293C23.4051 2.87541 23.1476 2.67002 22.9335 2.79719C22.1432 3.26683 21.292 3.61915 20.4033 3.84447C20.3517 3.85755 20.2985 3.86417 20.2452 3.86417C20.0833 3.86417 19.9259 3.80396 19.8021 3.69467C18.8566 2.85981 17.6406 2.40002 16.3781 2.40002C15.8318 2.40002 15.2802 2.48533 14.7386 2.65361C13.0606 3.17502 11.7659 4.56171 11.3597 6.27258C11.2073 6.91431 11.1661 7.55662 11.237 8.18163C11.2451 8.25345 11.2113 8.30358 11.1904 8.32709C11.1537 8.36831 11.1016 8.39194 11.0476 8.39194C11.0416 8.39194 11.0354 8.39165 11.0292 8.39106C7.35623 8.04918 4.04406 6.27634 1.70284 3.39917C1.58346 3.25241 1.35452 3.27041 1.25936 3.43393C0.800887 4.22194 0.558602 5.12323 0.558602 6.04034C0.558602 7.44586 1.12224 8.77041 2.10127 9.73601C1.68956 9.63821 1.29108 9.48419 0.920918 9.27822C0.741838 9.17854 0.521498 9.30665 0.518982 9.51186C0.493349 11.5999 1.71355 13.4578 3.54146 14.2944C3.50465 14.2953 3.46784 14.2957 3.43097 14.2957C3.14122 14.2957 2.84785 14.2676 2.55909 14.2124C2.35742 14.1738 2.188 14.3654 2.25062 14.5613C2.84393 16.4171 4.4388 17.785 6.34735 18.0955C4.76336 19.1608 2.91878 19.7227 0.998929 19.7227L0.400414 19.7224C0.216008 19.7224 0.0600442 19.8428 0.0130502 20.0218C-0.0332415 20.198 0.0520266 20.3839 0.209278 20.4756C2.37264 21.7369 4.84026 22.4035 7.34645 22.4035C9.54019 22.4035 11.5922 21.9674 13.4457 21.1073C15.1448 20.3187 16.6462 19.1915 17.9083 17.757C19.0841 16.4207 20.0035 14.878 20.6409 13.1719C21.2485 11.5457 21.5697 9.81041 21.5697 8.15372V8.0748C21.5697 7.80879 21.6897 7.55849 21.8993 7.38811C22.6943 6.7414 23.3866 5.98013 23.9569 5.12546C24.1075 4.89978 23.87 4.61694 23.6222 4.72705Z" fill="#7C828D"></path> </g> </svg>
+           </a>
+        </div>
+    </div>
+ </div>
+</section><!--footer info end-->
+   
+</body>
+</html>
