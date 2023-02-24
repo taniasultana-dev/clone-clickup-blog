@@ -29,6 +29,9 @@ module.exports = {
       },
       blur: {
         xl: '200px',
+      },
+      backgroundImage: {
+        'newsletter': "url(./../images/newsletter-bg.webp)",
       }
     },
   },

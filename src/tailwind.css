@@ -16,6 +16,10 @@
         @apply hover:text-pink hover:bg-white;
     
     }
+
+    .footer-menu-link {
+        @apply text-primary text-sm hover:text-blue capitalize;
+    }
 }
 
 /* tailwind components end*/
